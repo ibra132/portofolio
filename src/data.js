@@ -107,7 +107,7 @@ export const listProjects = [
     project: "Flysha",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, id?",
-    tools: ["Next Js", "Tailwind CSS", "Lucia", "Supabase", "TypeScript"],
+    tools: ["Next Js", "Tailwind CSS", "Supabase"],
     url: "https://github.com/ibra132/flysha",
   },
 ];
