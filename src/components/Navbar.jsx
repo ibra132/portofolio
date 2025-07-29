@@ -25,7 +25,7 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={`menu flex items-center sm:gap-10 gap-4 fixed md:static left-1/2 -translate-x-1/2 md:-translate-x-0 md:opacity-100 md:top-0 border-1 md:border-none bg-black/50 text-white backdrop-blur-md p-4 rounded rounded-br-2xl rounded-bl-2xl transition-all md:transition-none ${
+        className={`menu flex items-center sm:gap-10 gap-4 fixed z-10 md:z-0 md:static left-1/2 -translate-x-1/2 md:-translate-x-0 md:opacity-100 md:top-0 border-1 md:border-none bg-black/50 text-white backdrop-blur-md p-4 rounded rounded-br-2xl rounded-bl-2xl transition-all md:transition-none ${
           active ? "top-0 opacity-100" : "-top-10 opacity-0"
         }`}
       >

@@ -5,12 +5,12 @@ const Project = () => {
   return (
     <section
       id="project"
-      className=" text-white min-h-screen bg-cover bg-center"
+      className=" text-white min-h-[742px] bg-cover bg-center"
       style={{ backgroundImage: `url(${GradientImage})` }}
     >
-      <div className="flex flex-col justify-center items-center space-y-5 px-10  py-20">
+      <div className="flex flex-col justify-center items-center space-y-5 px-5 py-20">
         <h1 className="text-4xl font-bold">Projects</h1>
-        <p>Several projects that I have worked on</p>
+        <p className="text-justify">Several projects that I have worked on</p>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
           {listProjects.map((item) => (
             <div
@@ -19,7 +19,7 @@ const Project = () => {
             >
               <h2 className="font-bold text-xl">{item.project}</h2>
               <p className="font-thin">{item.description}</p>
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-wrap">
                 {item.tools.map((tool) => (
                   <span
                     className="bg-zinc-800 text-xs font-medium rounded-md p-2"

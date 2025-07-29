@@ -22,17 +22,30 @@ const About = () => {
     },
   ];
 
+  const education = [
+    {
+      title: "Universitas Esa Unggul",
+      subtitle: "Teknik Informatika",
+      year: "2024 - Present",
+    },
+  ];
+
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center p-10 bg-white"
+      className="min-h-screen flex items-center justify-center px-5 p-10 bg-white"
     >
       <div className="max-w-3xl text-center">
-        <h2 className="text-3xl font-bold mb-4">About Me</h2>
-        <p className="text-sm md:text-base text-gray-700">
+        <h2 className="text-4xl font-bold mb-4">About Me</h2>
+        <p className="text-sm md:text-base text-gray-700 text-justify">
           {expanded ? fullText : shortText}
         </p>
-        {expanded && <Milestone title="Work Experience" items={work} />}
+        {expanded && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start justify-center">
+            <Milestone title="Work Experience 🏢" items={work} />
+            <Milestone title="Education Experience 🏫" items={education} />
+          </div>
+        )}
         <button
           onClick={() => setExpanded(!expanded)}
           className="mt-5 text-pink-400 ml-2 underline"

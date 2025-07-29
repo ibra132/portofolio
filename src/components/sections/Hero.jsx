@@ -36,16 +36,16 @@ const Hero = () => {
     <section className="grid grid-cols-1 md:grid-cols-2 min-h-[640px]">
       {/* Left */}
       <div className="flex flex-col items-start justify-center md:p-10 p-5 text-white md:space-y-6 space-y-8">
-        <div className="flex gap-4 max-w-md items-center bg-zinc-800 p-4 rounded-2xl">
+        <div className="flex gap-4 max-w-md md:text-base text-sm items-center bg-zinc-800 p-4 rounded-2xl">
           <img
             src={Radiohead}
             alt=""
-            className="w-10 h-10 rounded-lg object-cover"
+            className="sm:w-10 sm:h-10 w-8 h-8 rounded-lg object-cover"
           />
           🎧 Let Down - Radiohead
         </div>
         <h1 className="text-4xl font-bold">Welcome to My Portfolio :D</h1>
-        <p>
+        <p className="md:text-base text-sm">
           I love turning creative ideas into beautiful, responsive web
           interfaces. With a focus on clean code and user experience, I enjoy
           building things that live on the web.
