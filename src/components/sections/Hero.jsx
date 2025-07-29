@@ -74,7 +74,7 @@ const Hero = () => {
       >
         <h2 className="text-2xl md:text-4xl font-semibold">
           I'm{" "}
-          <span className="text-pink-400 drop-shadow-[0_0_6px_#ec4899]">
+          <span className="text-pink-500 transition duration-300 hover:text-pink-400 hover:drop-shadow-[0_0_6px_#ec4899]">
             {text}|
           </span>
         </h2>
