@@ -21,7 +21,9 @@ const Navbar = () => {
   return (
     <div className="navbar py-7 px-7 flex items-center justify-between">
       <div className="logo">
-        <h1 className="text-3xl font-bold text-white">バイム's Porto</h1>
+        <h1 className="text-2xl sm:text-4xl font-bold text-white">
+          バイム's Porto
+        </h1>
       </div>
 
       <ul
