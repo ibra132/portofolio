@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { GradientImage, Radiohead } from "../../data";
+import toast from "react-hot-toast";
 
 const words = ["Frontend Developer"];
 
@@ -32,6 +33,10 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, wordIndex]);
 
+  const handleDownload = () => {
+    toast.success("CV downloaded!");
+  };
+
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 min-h-[640px]">
       {/* Left */}
@@ -52,6 +57,7 @@ const Hero = () => {
         </p>
         <div className="flex gap-2">
           <a
+            onClick={handleDownload}
             href="/cv.pdf"
             download
             className="bg-white text-black px-4 py-2 rounded-lg"
