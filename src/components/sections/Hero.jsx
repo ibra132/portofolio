@@ -73,7 +73,10 @@ const Hero = () => {
         style={{ backgroundImage: `url(${GradientImage})` }}
       >
         <h2 className="text-2xl md:text-4xl font-semibold">
-          I'm <span className="text-pink-500">{text}|</span>
+          I'm{" "}
+          <span className="text-pink-400 drop-shadow-[0_0_6px_#ec4899]">
+            {text}|
+          </span>
         </h2>
       </div>
     </section>
