@@ -1,49 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Milestone from "../Milestone";
+import { aboutText, education, work } from "../../data";
 
 const About = () => {
-  const fullText =
-    "A dedicated Frontend Engineer specializing in web development, with strong proficiency in a diverse set of frontend technologies. I have extensive hands-on experience in building robust and scalable web applications using Vue and TypeScript. My expertise focuses on crafting intuitive user interfaces, implementing responsive designs, and ensuring optimal user experiences using modern styling tools such as Tailwind CSS and SCSS.";
-
-  const work = [
-    {
-      title: "PT WIR Group Asia",
-      subtitle: "Frontend Developer Intern",
-      year: "2025 | August 04 - Present",
-    },
-    {
-      title: "PT Qtera Mandiri",
-      subtitle: "Frontend Developer Intern",
-      year: "2025 | January 04 - July 09",
-    },
-    {
-      title: "PT Adici Jaya Bersama",
-      subtitle: "Frontend Developer Intern",
-      year: "2023 | January 09 - 2023 | March 30",
-    },
-  ];
-
-  const education = [
-    {
-      title: "SMKN 56 Jakarta",
-      subtitle: "Multimedia",
-      year: "2021 - 2024",
-    },
-    {
-      title: "Universitas Esa Unggul",
-      subtitle: "Teknik Informatika",
-      year: "2024 - Present",
-    },
-  ];
-
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center p-18 bg-white"
+      className="flex items-center justify-center py-18 bg-white"
     >
       <motion.div
-        className="max-w-3xl text-center gap-4"
+        className="max-w-3xl text-center gap-4 px-5"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, ease: "easeInOut" }}
@@ -68,7 +35,7 @@ const About = () => {
           transition={{ duration: 1, ease: "easeInOut", delay: 0.2 }}
           viewport={{ once: true }}
         >
-          {fullText}
+          {aboutText}
         </motion.p>
 
         {/* Grid Section */}

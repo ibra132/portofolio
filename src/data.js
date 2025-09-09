@@ -12,6 +12,40 @@ import Tools8 from "/assets/tools/github.png";
 import Tools10 from "/assets/tools/canva.png";
 import Tools11 from "/assets/tools/figma.png";
 
+export const aboutText =
+  "A dedicated Frontend Engineer specializing in web development, with strong proficiency in a diverse set of frontend technologies. I have extensive hands-on experience in building robust and scalable web applications using Vue and TypeScript. My expertise focuses on crafting intuitive user interfaces, implementing responsive designs, and ensuring optimal user experiences using modern styling tools such as Tailwind CSS and SCSS.";
+
+export const work = [
+  {
+    title: "PT WIR Group Asia",
+    subtitle: "Frontend Developer Intern",
+    year: "2025 | August 04 - Present",
+  },
+  {
+    title: "PT Qtera Mandiri",
+    subtitle: "Frontend Developer Intern",
+    year: "2025 | January 04 - July 09",
+  },
+  {
+    title: "PT Adici Jaya Bersama",
+    subtitle: "Frontend Developer Intern",
+    year: "2023 | January 09 - 2023 | March 30",
+  },
+];
+
+export const education = [
+  {
+    title: "SMKN 56 Jakarta",
+    subtitle: "Multimedia",
+    year: "2021 - 2024",
+  },
+  {
+    title: "Universitas Esa Unggul",
+    subtitle: "Teknik Informatika",
+    year: "2024 - Present",
+  },
+];
+
 export const listTools = [
   {
     id: 1,
