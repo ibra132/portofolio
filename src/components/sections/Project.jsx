@@ -34,14 +34,16 @@ const Project = () => {
                   </span>
                 ))}
               </div>
-              <a
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white w-full inline-block text-center text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-zinc-200 transition"
-              >
-                See Project
-              </a>
+              {item.url && (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white w-full inline-block text-center text-black px-4 py-2 rounded-lg cursor-pointer hover:bg-zinc-200 transition"
+                >
+                  See Project
+                </a>
+              )}
             </motion.div>
           ))}
         </div>
