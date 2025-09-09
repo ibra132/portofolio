@@ -13,9 +13,7 @@ if (rootElement) {
   createRoot(rootElement).render(
     <StrictMode>
       <Navbar />
-      <div className="container mx-auto">
-        <App />
-      </div>
+      <App />
       <Footer />
     </StrictMode>
   );

@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { GradientImage, Radiohead } from "../../data";
 import toast from "react-hot-toast";
 
-const words = ["Frontend Developer"];
-
 const Hero = () => {
   const [text, setText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
@@ -11,6 +9,8 @@ const Hero = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
+    const words = ["Frontend Developer"];
+
     const currentWord = words[wordIndex];
     const typingSpeed = isDeleting ? 50 : 100;
 
@@ -42,18 +42,15 @@ const Hero = () => {
       {/* Left */}
       <div className="flex flex-col items-start justify-center md:p-10 p-5 text-white md:space-y-6 space-y-8">
         <div className="flex gap-4 max-w-md md:text-base text-sm items-center bg-zinc-800 p-4 rounded-2xl">
-          <img
-            src={Radiohead}
-            alt=""
-            className="sm:w-10 sm:h-10 w-8 h-8 rounded-lg object-cover"
-          />
-          🎧 Let Down - Radiohead
+          "Second best time to learn is now!"
         </div>
-        <h1 className="text-4xl font-bold">Welcome to My Portfolio :D</h1>
+        <h1 className="text-4xl font-bold">
+          Crafting Clean & Engaging Web Experiences
+        </h1>
         <p className="md:text-base text-sm">
-          I love turning creative ideas into beautiful, responsive web
-          interfaces. With a focus on clean code and user experience, I enjoy
-          building things that live on the web.
+          I specialize in building fast, responsive, and user-focused web
+          applications. With a passion for clean code and seamless user
+          experiences, I help ideas come to life on the web.
         </p>
         <div className="flex gap-2">
           <a
@@ -80,7 +77,13 @@ const Hero = () => {
       >
         <h2 className="text-2xl md:text-4xl font-semibold">
           I'm{" "}
-          <span className="text-pink-500 transition duration-300 hover:text-pink-400 hover:drop-shadow-[0_0_6px_#ec4899]">
+          <span
+            className={`text-pink-500 transition duration-500 opacity-70 ${
+              !isDeleting
+                ? "text-pink-400 drop-shadow-[0_0_6px_#ec4899] opacity-100"
+                : ""
+            }`}
+          >
             {text}|
           </span>
         </h2>

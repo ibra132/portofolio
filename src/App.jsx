@@ -12,9 +12,11 @@ function App() {
     <>
       <Toaster position="top-center" reverseOrder={false} />
       <Hero />
+      <div className="h-5 bg-gradient-to-b from-black to-white/50" />
       <About />
       <Tools />
       <Project />
+      <div className="h-5 bg-gradient-to-b from-black to-white/50" />
       <Contact />
     </>
   );
