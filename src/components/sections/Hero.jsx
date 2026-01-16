@@ -76,7 +76,7 @@ const Hero = () => {
         style={{ backgroundImage: `url(${GradientImage})` }}
       >
         <h2 className="text-2xl md:text-4xl font-semibold">
-          I'm{" "}
+          Hello i'm{" "}
           <span
             className={`text-pink-500 transition duration-500 opacity-70 ${
               !isDeleting

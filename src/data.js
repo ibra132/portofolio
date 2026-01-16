@@ -151,4 +151,11 @@ export const listProjects = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, id?",
     tools: ["React Js", "Tailwind CSS", "Zustand", "TypeScript"],
   },
+  {
+    id: 5,
+    project: "Alfamind",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, id?",
+    tools: ["React Js", "Tailwind CSS", "Zustand", "TypeScript"],
+  },
 ];
