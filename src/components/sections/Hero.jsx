@@ -38,7 +38,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 min-h-[640px]">
+    <section className="grid grid-cols-1 md:grid-cols-2 min-h-[720px]">
       {/* Left */}
       <div className="flex flex-col items-start justify-center md:p-10 p-5 text-white md:space-y-6 space-y-8">
         <div className="flex gap-4 max-w-md md:text-base text-sm items-center bg-zinc-800 p-4 rounded-2xl">
