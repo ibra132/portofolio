@@ -6,6 +6,7 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -25,7 +26,10 @@ const Contact = () => {
     };
 
     try {
+      setIsLoading(true);
+
       await emailjs.send(serviceID, templateID, templateParams, publicKey);
+
       toast.success("Email sent successfully!");
       setName("");
       setEmail("");
@@ -33,11 +37,13 @@ const Contact = () => {
     } catch (error) {
       console.log(error);
       toast.error("Failed to send email.");
+    } finally {
+      setIsLoading(false);
     }
   };
 
   return (
-    <section id="contact" className="text-black bg-white  bg-cover bg-center">
+    <section id="contact" className="text-black bg-white bg-cover bg-center">
       <div className="flex flex-col justify-center items-center space-y-10 px-6 py-20">
         <div className="text-center space-y-4">
           <h1 className="text-4xl font-bold">Contact</h1>
@@ -48,7 +54,7 @@ const Contact = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="w-full max-w-md bg-white  shadow-lg rounded-lg p-6 space-y-6"
+          className="w-full max-w-md bg-white shadow-lg rounded-lg p-6 space-y-6"
         >
           <div className="flex flex-col space-y-2">
             <label htmlFor="name" className="font-semibold">
@@ -57,11 +63,11 @@ const Contact = () => {
             <input
               type="text"
               id="name"
-              name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Your Name"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400"
+              disabled={isLoading}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 disabled:opacity-60"
               required
             />
           </div>
@@ -73,11 +79,11 @@ const Contact = () => {
             <input
               type="email"
               id="email"
-              name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@example.com"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400"
+              disabled={isLoading}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 disabled:opacity-60"
               required
             />
           </div>
@@ -88,20 +94,30 @@ const Contact = () => {
             </label>
             <textarea
               id="message"
-              name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Your message..."
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 resize-y h-40"
+              disabled={isLoading}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 resize-y h-40 disabled:opacity-60"
               required
-            ></textarea>
+            />
           </div>
 
           <button
             type="submit"
-            className="w-full bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 rounded-md transition-all"
+            disabled={isLoading}
+            className="
+              w-full flex items-center justify-center gap-2
+              bg-pink-500 hover:bg-pink-600
+              disabled:bg-pink-400
+              text-white font-semibold py-2 rounded-md
+              transition-all
+            "
           >
-            Send Message
+            {isLoading && (
+              <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+            )}
+            {isLoading ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>
