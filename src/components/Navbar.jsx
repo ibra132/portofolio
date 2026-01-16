@@ -41,7 +41,7 @@ const Navbar = () => {
           md:top-0
           border-1 md:border-none
           bg-black/50 md:bg-transparent
-          text-zinc-400
+          text-white md:text-zinc-400 
           backdrop-blur-md md:backdrop-blur-0
           p-4 md:p-0
           rounded rounded-br-2xl rounded-bl-2xl md:rounded-none
