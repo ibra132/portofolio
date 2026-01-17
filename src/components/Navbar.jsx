@@ -20,6 +20,7 @@ const Navbar = () => {
         navbar py-4 px-10 flex items-center justify-between
         md:fixed md:top-0 md:left-0 md:right-0 md:z-50
         md:backdrop-blur-md
+        md:bg-black/50 
         md:border-b md:border-white/10
       "
     >
@@ -39,10 +40,10 @@ const Navbar = () => {
           left-1/2 -translate-x-1/2 md:-translate-x-0
           md:opacity-100
           md:top-0
-          border-1 md:border-none
           bg-black/50 md:bg-transparent
-          text-white md:text-zinc-400 
-          backdrop-blur-md md:backdrop-blur-0
+          border-1 md:border-none
+          text-white 
+          backdrop-blur-md md:backdrop-blur-none
           p-4 md:p-0
           rounded rounded-br-2xl rounded-bl-2xl md:rounded-none
           transition-all md:transition-none
