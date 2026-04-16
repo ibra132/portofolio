@@ -73,7 +73,6 @@ const Footer = () => {
 
       <div className="border-t border-white mt-10 pt-6 text-sm text-center text-gray-500">
         <p>&copy; {new Date().getFullYear()} Baim. All rights reserved.</p>
-        <p>Built with ❤️ using React & Tailwind CSS</p>
       </div>
     </footer>
   );

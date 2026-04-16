@@ -9,7 +9,7 @@ const Hero = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const words = ["Frontend Developer"];
+    const words = ["Frontend Developer 🚀", "Obsessed with Clean Code"];
 
     const currentWord = words[wordIndex];
     const typingSpeed = isDeleting ? 50 : 100;
@@ -38,19 +38,19 @@ const Hero = () => {
   };
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 min-h-[740px]">
+    <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
       {/* Left */}
-      <div className="flex flex-col items-start justify-center md:p-10 p-5 text-white md:space-y-6 space-y-8">
+      <div className="flex flex-col items-start justify-center md:p-10 px-10 py-35 text-white md:space-y-6 space-y-8">
         <div className="flex gap-4 max-w-md md:text-base text-sm items-center bg-zinc-800 p-4 rounded-2xl">
           "Second best time to learn is now!"
         </div>
         <h1 className="text-4xl font-bold">
-          Crafting Clean & Engaging Web Experiences
+          Turning Ideas Into Clean, Fast & Interactive Web Apps
         </h1>
         <p className="md:text-base text-sm">
-          I specialize in building fast, responsive, and user-focused web
-          applications. With a passion for clean code and seamless user
-          experiences, I help ideas come to life on the web.
+          I build responsive and user-friendly web apps using modern
+          technologies. Focused on performance, clean architecture, and great
+          user experience.
         </p>
         <div className="flex gap-2">
           <a
@@ -72,7 +72,7 @@ const Hero = () => {
 
       {/* Right */}
       <div
-        className="ml-auto self-center h-[500px] w-full flex justify-center items-center text-white bg-cover bg-center"
+        className="ml-auto self-center h-[500px] w-full flex justify-center items-center text-white bg-cover bg-center relative"
         style={{ backgroundImage: `url(${GradientImage})` }}
       >
         <h2 className="text-2xl md:text-4xl font-semibold">
