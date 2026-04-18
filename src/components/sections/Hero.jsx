@@ -57,15 +57,15 @@ const Hero = () => {
             onClick={handleDownload}
             href="/cv.pdf"
             download
-            className="bg-white text-black px-4 py-2 rounded-lg shrink-0"
+            className="bg-white text-black px-4 py-2 rounded-lg"
           >
             Get My Resume
           </a>
           <a
             href="#contact"
-            className="border-1 border-white text-white px-4 py-2 rounded-lg shrink-0"
+            className="border-1 border-white text-white px-4 py-2 rounded-lg "
           >
-            Let’s Work Together
+            Contact Me
           </a>
         </div>
       </div>
