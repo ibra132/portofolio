@@ -38,14 +38,14 @@ const Hero = () => {
   };
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
+    <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen bg-gradient-to-t from-black to-zinc-900">
       {/* Left */}
       <div className="flex flex-col items-start justify-center md:p-10 px-10 py-35 text-white md:space-y-6 space-y-8">
         <div className="flex gap-4 max-w-md md:text-base text-sm items-center bg-zinc-800 p-4 rounded-2xl">
-          "Second best time to learn is now!"
+          "Hello Everyone!"
         </div>
-        <h1 className="text-4xl font-bold">
-          Turning Ideas Into Clean, Fast & Interactive Web Apps
+        <h1 className="text-3xl lg:text-4xl font-bold">
+          I'm Frontend Developer
         </h1>
         <p className="md:text-base text-sm">
           I build responsive and user-friendly web apps using modern
@@ -57,15 +57,15 @@ const Hero = () => {
             onClick={handleDownload}
             href="/cv.pdf"
             download
-            className="bg-white text-black px-4 py-2 rounded-lg"
+            className="bg-white text-black px-4 py-2 rounded-lg shrink-0"
           >
-            Download CV
+            Get My Resume
           </a>
           <a
             href="#contact"
-            className="border-1 border-white text-white px-4 py-2 rounded-lg"
+            className="border-1 border-white text-white px-4 py-2 rounded-lg shrink-0"
           >
-            Contact Me
+            Let’s Work Together
           </a>
         </div>
       </div>

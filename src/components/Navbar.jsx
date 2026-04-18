@@ -117,7 +117,7 @@ const Navbar = () => {
             className="md:hidden text-white text-xl"
             onClick={() => setIsOpen((prev) => !prev)}
           >
-            ☰
+            {isOpen ? "x" : "☰"}
           </button>
         </div>
 
