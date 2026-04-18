@@ -2,7 +2,7 @@ import React from "react";
 
 const Milestone = ({ title, items }) => {
   return (
-    <section className="py-10 flex justify-center items-start">
+    <section className="py-10">
       <div>
         <h2 className="text-xl font-bold text-center mb-8">{title}</h2>
         <div className="relative border-l-4 border-pink-400 ml-4">

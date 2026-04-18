@@ -40,7 +40,7 @@ const Hero = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen bg-gradient-to-t from-black to-zinc-900">
       {/* Left */}
-      <div className="flex flex-col items-start justify-center md:p-10 px-10 py-35 text-white md:space-y-6 space-y-8">
+      <div className="flex flex-col items-start justify-center md:p-10 px-6 py-35 text-white md:space-y-6 space-y-8">
         <div className="flex gap-4 max-w-md md:text-base text-sm items-center bg-zinc-800 p-4 rounded-2xl">
           "Hello Everyone!"
         </div>
@@ -72,10 +72,10 @@ const Hero = () => {
 
       {/* Right */}
       <div
-        className="ml-auto self-center h-[500px] w-full flex justify-center items-center text-white bg-cover bg-center relative"
+        className="ml-auto px-6 text-center self-center h-[500px] w-full flex justify-center items-center text-white bg-cover bg-center relative"
         style={{ backgroundImage: `url(${GradientImage})` }}
       >
-        <h2 className="text-2xl md:text-4xl font-semibold">
+        <h2 className="text-3xl md:text-4xl font-semibold">
           <span
             className={`text-pink-500 transition duration-500 opacity-70 ${
               !isDeleting

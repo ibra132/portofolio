@@ -10,7 +10,7 @@ const Project = () => {
       style={{ backgroundImage: `url(${GradientImage})` }}
     >
       <div className="flex flex-col justify-center items-center space-y-5 px-5 py-20">
-        <h1 className="text-4xl font-bold">Projects</h1>
+        <h1 className="text-3xl lg:text-4xl font-bold">Projects</h1>
         <p className="text-justify">Several projects that I have worked on</p>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
           {listProjects.map((item, index) => (

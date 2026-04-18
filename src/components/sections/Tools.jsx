@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const Tools = () => {
   return (
-    <section className="tools text-white md:p-10 p-5 space-y-5 my-16">
-      <h1 className="text-4xl font-bold">Tools that I use..</h1>
-      <p>
+    <section className="tools text-white md:p-10 p-6 space-y-5 my-16">
+      <h1 className="text-3xl lg:text-4xl font-bold">Tools that I use..</h1>
+      <p className="md:text-base text-sm">
         💻 From coding to design — here are the tools that fuel my creativity
         and productivity.
       </p>

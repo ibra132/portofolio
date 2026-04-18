@@ -46,15 +46,15 @@ const Contact = () => {
     <section id="contact" className="text-black bg-white bg-cover bg-center">
       <div className="flex flex-col justify-center items-center space-y-10 px-6 py-20">
         <div className="text-center space-y-4">
-          <h1 className="text-4xl font-bold">Contact</h1>
-          <p className="text-gray-600 text-justify">
+          <h1 className="text-3xl lg:text-4xl font-bold">Contact</h1>
+          <p className="md:text-base text-sm text-gray-600 justify-center">
             Feel free to drop a message anytime, I'll get back to you soon!
           </p>
         </div>
 
         <form
           onSubmit={handleSubmit}
-          className="w-full max-w-md bg-white shadow-lg rounded-lg p-6 space-y-6"
+          className="w-full max-w-md md:max-w-2xl bg-white shadow-lg rounded-lg p-6 space-y-6"
         >
           <div className="flex flex-col space-y-2">
             <label htmlFor="name" className="font-semibold">
