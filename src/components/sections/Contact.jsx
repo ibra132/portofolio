@@ -25,6 +25,11 @@ const Contact = () => {
       to_name: "Baim",
     };
 
+    if (!name || !email || !message) {
+      toast.error("Please fill in all the fields.");
+      return;
+    }
+
     try {
       setIsLoading(true);
 
@@ -68,7 +73,6 @@ const Contact = () => {
               placeholder="Your Name"
               disabled={isLoading}
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 disabled:opacity-60"
-              required
             />
           </div>
 
@@ -84,7 +88,6 @@ const Contact = () => {
               placeholder="you@example.com"
               disabled={isLoading}
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 disabled:opacity-60"
-              required
             />
           </div>
 
@@ -99,7 +102,6 @@ const Contact = () => {
               placeholder="Your message..."
               disabled={isLoading}
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 resize-y h-40 disabled:opacity-60"
-              required
             />
           </div>
 

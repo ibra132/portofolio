@@ -138,22 +138,14 @@ export const listProjects = [
   },
   {
     id: 3,
-    project: "Flysha",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, id?",
-    tools: ["Next Js", "Tailwind CSS", "Supabase"],
-    url: "https://github.com/ibra132/flysha",
-  },
-  {
-    id: 4,
     project: "Ti Oan",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, id?",
     tools: ["React Js", "Tailwind CSS", "Zustand", "TypeScript"],
   },
   {
-    id: 5,
-    project: "Alfamind",
+    id: 4,
+    project: "Mandiri Sukha",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, id?",
     tools: ["React Js", "Tailwind CSS", "Zustand", "TypeScript"],
