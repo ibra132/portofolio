@@ -27,7 +27,7 @@ const About = () => {
 
             {/* IDENTITAS */}
             <div className="flex-1">
-              <h2 className="text-2xl font-semibold mb-1">Ibra G</h2>
+              <h2 className="text-2xl font-semibold mb-1">Ibrahim Gunawan</h2>
               <p className="text-sm text-gray-500 mb-4">Frontend Developer</p>
 
               <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify mb-6">
