@@ -19,7 +19,7 @@ export const work = [
   {
     title: "PT WIR Group Asia",
     subtitle: "Frontend Developer Intern",
-    year: "2025 | August 04 - Present",
+    year: "2025 | August 04 - 2026 | April 28",
   },
   {
     title: "PT Qtera Mandiri",
