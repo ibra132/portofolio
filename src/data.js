@@ -144,7 +144,7 @@ export const listProjects = [
     description:
       "Contributed to an e-commerce platform by developing address management features, enhancing UI/UX, and supporting a role-based transaction dashboard.",
     tools: ["React Js", "Tailwind CSS", "Zustand", "TypeScript"],
-    url: "Private Project",
+    img: "./assets/projects/ti-oan-market.png",
   },
   {
     id: 4,
@@ -152,6 +152,5 @@ export const listProjects = [
     description:
       "Developed key features including a wishlist system, UI enhancements, and promotional campaigns such as free shipping with API integration.",
     tools: ["React Js", "Tailwind CSS", "Zustand", "TypeScript"],
-    url: "Private Project",
   },
 ];

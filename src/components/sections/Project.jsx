@@ -9,8 +9,8 @@ const Project = () => {
       className="relative text-white py-24 bg-cover bg-center"
       style={{ backgroundImage: `url(${GradientImage})` }}
     >
-      {/* Overlay biar lebih readable */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50" />
 
       <div className="relative z-10 max-w-full mx-10 px-5">
         {/* Header */}
@@ -25,15 +25,29 @@ const Project = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-          {listProjects.map((item, index) => (
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={{
+            hidden: {},
+            show: {
+              transition: {
+                staggerChildren: 0.08, // kecilin biar ringan
+              },
+            },
+          }}
+          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"
+        >
+          {listProjects.map((item) => (
             <motion.div
               key={item.id}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.15 }}
-              viewport={{ once: true }}
-              className="group rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-md hover:bg-white/10 transition-all duration-300"
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                show: { opacity: 1, y: 0 },
+              }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+              className="group rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:bg-white/10 transition duration-300"
             >
               {/* Image */}
               {item.img && (
@@ -41,16 +55,15 @@ const Project = () => {
                   <img
                     src={item.img}
                     alt={item.project}
-                    className="w-full h-[200px] object-cover group-hover:scale-105 transition duration-500"
+                    loading="lazy"
+                    className="w-full h-[200px] object-cover transition duration-500 group-hover:scale-[1.03]"
                   />
                 </div>
               )}
 
               {/* Content */}
               <div className="p-5 flex flex-col gap-4">
-                <h2 className="text-lg font-semibold group-hover:text-white">
-                  {item.project}
-                </h2>
+                <h2 className="text-lg font-semibold">{item.project}</h2>
 
                 <p className="text-sm text-zinc-300 leading-relaxed">
                   {item.description}
@@ -82,7 +95,7 @@ const Project = () => {
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
