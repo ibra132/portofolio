@@ -124,30 +124,34 @@ export const listProjects = [
     id: 1,
     project: "Supply Asset Management",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, id?",
+      "Developed a web-based system to manage supply assets, focusing on inventory tracking, reporting, and responsive UI integration with backend services.",
     tools: ["Vue JS", "Tailwind CSS", "Cypress", "TypeScript"],
-    url: "https://dev-console.tagsamurai.com",
+    img: "./assets/projects/supply-asset-management.png",
+    url: "https://www.tagsamurai.com/supply-asset-management/",
   },
   {
     id: 2,
     project: "Fixed Asset Management",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, id?",
+      "Built a platform for managing fixed assets, including tracking, registration, and data visualization with a focus on performance and usability.",
     tools: ["Vue JS", "Tailwind CSS", "Cypress", "TypeScript"],
-    url: "https://dev-console.tagsamurai.com",
+    img: "./assets/projects/fixed-asset-management.png",
+    url: "https://www.tagsamurai.com/fixed-asset-management/",
   },
   {
     id: 3,
-    project: "Ti Oan",
+    project: "Ti Oan Market",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, id?",
+      "Contributed to an e-commerce platform by developing address management features, enhancing UI/UX, and supporting a role-based transaction dashboard.",
     tools: ["React Js", "Tailwind CSS", "Zustand", "TypeScript"],
+    url: "Private Project",
   },
   {
     id: 4,
-    project: "Mandiri Sukha",
+    project: "Mandiri Sukha (Alfa Feature)",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, id?",
+      "Developed key features including a wishlist system, UI enhancements, and promotional campaigns such as free shipping with API integration.",
     tools: ["React Js", "Tailwind CSS", "Zustand", "TypeScript"],
+    url: "Private Project",
   },
 ];
