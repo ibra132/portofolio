@@ -55,7 +55,7 @@ const Hero = () => {
         <div className="flex gap-2">
           <a
             onClick={handleDownload}
-            href="/CV Ibrahim Gunawan.pdf"
+            href="/CV ATS Ibrahim Gunawan.pdf"
             download
             className="bg-white text-black px-4 py-2 rounded-lg"
           >

@@ -13,7 +13,7 @@ import Tools10 from "/assets/tools/canva.png";
 import Tools11 from "/assets/tools/figma.png";
 
 export const aboutText =
-  "A dedicated Frontend Engineer specializing in web development, with strong proficiency in a diverse set of frontend technologies. I have extensive hands-on experience in building robust and scalable web applications using Vue and TypeScript. My expertise focuses on crafting intuitive user interfaces, implementing responsive designs, and ensuring optimal user experiences using modern styling tools such as Tailwind CSS and SCSS.";
+  "An undergraduate student specializing in web development with a primary focus on Front-End. Has practical experience developing web applications using Vue and React, along with a solid understanding of back-end integration. Also experienced in designing user interfaces and building structured, maintainable web applications.";
 
 export const work = [
   {
