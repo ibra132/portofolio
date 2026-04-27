@@ -12,7 +12,7 @@ const Project = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50" />
 
-      <div className="relative z-10 max-w-full mx-10 px-5">
+      <div className="relative z-10 max-w-full lg:mx-10 mx-5">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-3xl lg:text-4xl font-bold mb-3">
